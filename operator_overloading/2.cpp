@@ -20,7 +20,7 @@ public:
         cout << "y = " << y << endl;
         cout << "z = " << z << endl;
     }
-    int operator--()
+    void operator--()
     {
         x--;
         y--;
