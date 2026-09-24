@@ -60,11 +60,13 @@ Beta::Beta(Alpha a)
 
 int main()
 {
+    cout << "Alpha to Beta" << endl;
     Alpha a(10);
     a.display();
     Beta b = a;
     b.display();
 
+    cout << "Beta to Alpha" << endl;
     Beta b1(30);
     b1.display();
     Alpha a1 = b1;
