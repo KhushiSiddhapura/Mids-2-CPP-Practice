@@ -16,11 +16,25 @@ public:
     {
         cout << "n = " << n << endl;
     }
-    
+    void operator++()
+    {
+        // pre-increment
+        n++;
+    }
+    void operator++(int)
+    {
+        // post-increment
+        n++;
+    }
 };
 
 int main()
 {
-
+    Num n(6);
+    n.display();
+    n++;
+    n.display();
+    ++n;
+    n.display();
     return 0;
 }
